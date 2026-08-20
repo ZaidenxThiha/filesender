@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -29,15 +28,13 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body>
-        {children}
+      <head>
         {/* Popunder / Popunder_1 — JS SYNC */}
-        <Script
-          id="effectivecpm-popunder"
+        <script
           src="https://pl30932501.effectivecpmnetwork.com/7b/ef/18/7bef181c8113410d16150bc146afb2f2.js"
-          strategy="afterInteractive"
         />
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
