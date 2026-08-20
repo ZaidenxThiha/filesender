@@ -34,8 +34,11 @@ button:focus-visible, input:focus-visible, label:has(input:focus-visible) {
 
 .page-shell {
   min-height: 100svh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(.75rem, 2vw, 1.25rem);
   padding: clamp(.75rem, 2vw, 1.5rem);
 }
 .workspace {
@@ -183,4 +186,40 @@ button:focus-visible, input:focus-visible, label:has(input:focus-visible) {
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+.ad-slots {
+  width: min(1100px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.ad-native-slot {
+  flex: 1 1 320px;
+  min-height: 90px;
+  min-width: min(100%, 320px);
+}
+.ad-banner-slot {
+  flex: 0 0 160px;
+  width: 160px;
+  height: 300px;
+}
+.ad-smartlink-slot {
+  flex: 1 1 100%;
+  display: block;
+  padding: .65rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255,255,255,.65);
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 650;
+  text-align: center;
+  text-decoration: none;
+}
+.ad-smartlink-slot:hover {
+  color: var(--mint-deep);
+  border-color: rgba(23,107,74,.25);
 }
