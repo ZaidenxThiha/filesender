@@ -34,7 +34,7 @@ export default function RootLayout({
           src="https://pl30932547.effectivecpmnetwork.com/30/19/96/3019962f11d631fcdd7a4e17c86089a3.js"
         ></script>
         <script
-          src="https://pl30932501.effectivecpmnetwork.com/7b/ef/18/7bef181c8113410d16150bc146afb2f2.js"
+          src="https://elseconcerning.com/7b/ef/18/7bef181c8113410d16150bc146afb2f2.js"
         ></script>
         {/* EffectiveCPM — Native banner */}
         <script

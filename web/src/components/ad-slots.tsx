@@ -1,5 +1,5 @@
 const SMARTLINK_URL =
-  "https://www.effectivecpmnetwork.com/vxmi9efju8?key=63a5feb400e838f6adcde847d4517e13";
+  "https://elseconcerning.com/vxmi9efju8?key=63a5feb400e838f6adcde847d4517e13";
 
 const BANNER_OPTIONS = `atOptions = {
   'key' : 'efc635935a723faae0771e7266793057',
